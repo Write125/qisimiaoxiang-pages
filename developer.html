@@ -7,7 +7,7 @@
   <title>Developer &amp; Marketing API — Bayme</title>
   <link rel="stylesheet" href="site.css" />
 </head>
-<body>
+<body class="page-developer">
   <header class="site-header">
     <div class="wrap">
       <a class="logo" href="index.html">Bayme<span>bayme.store</span></a>
@@ -21,108 +21,130 @@
     </div>
   </header>
 
-  <main class="wrap legal-page">
-    <p class="updated">For TikTok Business API / Marketing API review · Last updated: May 26, 2026</p>
-    <h1>TikTok Marketing API — Developer disclosure</h1>
-    <p>This page summarizes how <strong>Bayme</strong> uses the TikTok Marketing API for <strong>internal advertising operations only</strong>. It is intended to support developer profile and application review.</p>
-
-    <div class="callout">
-      <strong>Applicant type:</strong> Direct advertiser / e-commerce operator — not a public multi-tenant SaaS. We manage our own TikTok ad accounts and seek API access to automate reporting and campaign updates we already perform manually.
+  <section class="hero-page">
+    <div class="wrap">
+      <p class="eyebrow"><span class="dot"></span> TikTok Business / Marketing API review</p>
+      <h1>Developer disclosure</h1>
+      <p class="lead">How <strong>Bayme</strong> uses the TikTok Marketing API for <strong>internal advertising operations only</strong>. Intended for developer profile and application review.</p>
+      <div class="callout callout-hero">
+        <strong>Applicant type:</strong> Direct advertiser / e-commerce operator — not a public multi-tenant SaaS. We manage our own TikTok ad accounts and seek API access to automate reporting and campaign updates we already perform manually.
+      </div>
     </div>
+  </section>
 
-    <section class="card">
-      <h2>1. Official URLs (please verify)</h2>
-      <table class="data">
-        <tr><th>Company website</th><td><code>https://app.bayme.store/</code></td></tr>
-        <tr><th>Terms of Service</th><td><code>https://app.bayme.store/terms.html</code></td></tr>
-        <tr><th>Privacy Policy</th><td><code>https://app.bayme.store/privacy.html</code></td></tr>
-        <tr><th>OAuth redirect URI</th><td><code>https://app.bayme.store/oauth.html</code></td></tr>
-        <tr><th>Contact email</th><td><code>dev@bayme.store</code> (same domain as website)</td></tr>
-        <tr><th>Domain</th><td><code>bayme.store</code> (registered domain; this site hosted at subdomain <code>app</code>)</td></tr>
-      </table>
-    </section>
+  <section class="section section-alt">
+    <div class="wrap">
+      <section class="card">
+        <h2>1. Official URLs (please verify)</h2>
+        <table class="data">
+          <tr><th>Company website</th><td><code>https://www.bayme.store/</code></td></tr>
+          <tr><th>Compliance &amp; OAuth host</th><td><code>https://app.bayme.store/</code></td></tr>
+          <tr><th>Terms of Service</th><td><code>https://app.bayme.store/terms.html</code></td></tr>
+          <tr><th>Privacy Policy</th><td><code>https://app.bayme.store/privacy.html</code></td></tr>
+          <tr><th>OAuth redirect URI</th><td><code>https://app.bayme.store/oauth.html</code></td></tr>
+          <tr><th>Contact email</th><td><code>dev@bayme.store</code> (same domain as website)</td></tr>
+          <tr><th>Registered domain</th><td><code>bayme.store</code></td></tr>
+        </table>
+      </section>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>2. Business description</h2>
-      <p><strong>Bayme</strong> sells products through online channels and runs paid advertising on TikTok and other platforms to acquire customers. Our team includes media buyers and operations staff who use TikTok Ads Manager daily.</p>
-      <table class="info">
-        <tr><th>Industry</th><td>E-commerce / retail</td></tr>
-        <tr><th>API use</th><td>TikTok Marketing API (advertising accounts we own or are authorized to manage)</td></tr>
-        <tr><th>End users of our tool</th><td>Authorized Bayme employees/contractors only</td></tr>
-        <tr><th>Public consumer app?</th><td>No — no public registration on this website</td></tr>
-      </table>
-    </section>
+  <section class="section">
+    <div class="wrap info-panel">
+      <section class="card">
+        <h2>2. Business description</h2>
+        <p><strong>Bayme</strong> sells products through online channels and runs paid advertising on TikTok and other platforms to acquire customers. Our team includes media buyers and operations staff who use TikTok Ads Manager daily.</p>
+        <table class="info">
+          <tr><th>Industry</th><td>E-commerce / retail</td></tr>
+          <tr><th>API use</th><td>TikTok Marketing API (advertising accounts we own or are authorized to manage)</td></tr>
+          <tr><th>End users of our tool</th><td>Authorized Bayme employees/contractors only</td></tr>
+          <tr><th>Public consumer app?</th><td>No — no public registration on this website</td></tr>
+        </table>
+      </section>
+      <section class="card">
+        <h2>3. Requested API capabilities</h2>
+        <table class="data">
+          <tr><th>Reporting</th><td>Read campaign, ad group, ad, and account-level metrics (spend, impressions, clicks, conversions) for dashboards and exports.</td></tr>
+          <tr><th>Campaign management</th><td>Create and update campaigns, ad groups, and ads in bulk; pause/enable entities; adjust budgets and bids within TikTok policy limits.</td></tr>
+          <tr><th>OAuth</th><td>Obtain and refresh advertiser access tokens via TikTok for Business authorization; redirect handled at <code>oauth.html</code>.</td></tr>
+        </table>
+        <h3>Not requested</h3>
+        <ul>
+          <li>Reselling API access to unrelated third parties</li>
+          <li>Content Posting API / posting organic videos to consumer feeds</li>
+          <li>Collecting unrelated TikTok user personal data beyond advertising operations</li>
+        </ul>
+      </section>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>3. Requested API capabilities</h2>
-      <table class="data">
-        <tr><th>Reporting</th><td>Read campaign, ad group, ad, and account-level metrics (spend, impressions, clicks, conversions) for dashboards and exports.</td></tr>
-        <tr><th>Campaign management</th><td>Create and update campaigns, ad groups, and ads in bulk; pause/enable entities; adjust budgets and bids within TikTok policy limits.</td></tr>
-        <tr><th>OAuth</th><td>Obtain and refresh advertiser access tokens via TikTok for Business authorization; redirect handled at <code>oauth.html</code>.</td></tr>
-      </table>
-      <h3>Not requested</h3>
-      <ul>
-        <li>Reselling API access to unrelated third parties</li>
-        <li>Content Posting API / posting organic videos to consumer feeds (separate developer products if any)</li>
-        <li>Collecting unrelated TikTok user personal data beyond advertising operations</li>
-      </ul>
-    </section>
+  <section class="section section-alt">
+    <div class="wrap">
+      <section class="card">
+        <h2>4. Integration workflow</h2>
+        <ol class="steps">
+          <li>Authorized staff opens our internal tool or documented authorization URL.</li>
+          <li>User signs in with TikTok for Business and grants permissions for our developer application.</li>
+          <li>TikTok redirects to <code>https://app.bayme.store/oauth.html</code> with an authorization code.</li>
+          <li>Our private server exchanges the code for <code>access_token</code> and <code>refresh_token</code> (tokens are never stored in this static website).</li>
+          <li>Server calls Marketing API endpoints for reporting and approved management actions on authorized <code>advertiser_id</code> values.</li>
+          <li>Tokens are refreshed before expiry; access is revoked when staff leave or authorization is removed in TikTok.</li>
+        </ol>
+      </section>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>4. Integration workflow</h2>
-      <ol class="steps">
-        <li>Authorized staff opens our internal tool or documented authorization URL.</li>
-        <li>User signs in with TikTok for Business and grants permissions for our developer application.</li>
-        <li>TikTok redirects to <code>https://app.bayme.store/oauth.html</code> with an authorization code.</li>
-        <li>Our private server exchanges the code for <code>access_token</code> and <code>refresh_token</code> (tokens are never stored in this static website).</li>
-        <li>Server calls Marketing API endpoints for reporting and approved management actions on authorized <code>advertiser_id</code> values.</li>
-        <li>Tokens are refreshed before expiry; access is revoked when staff leave or authorization is removed in TikTok.</li>
-      </ol>
-    </section>
+  <section class="section">
+    <div class="wrap info-panel">
+      <section class="card">
+        <h2>5. Data collected via API</h2>
+        <table class="data">
+          <tr><th>OAuth tokens</th><td>access_token, refresh_token</td></tr>
+          <tr><th>Account IDs</th><td>advertiser_id, business center identifiers</td></tr>
+          <tr><th>Advertising structure</th><td>campaign / ad group / ad names, IDs, statuses, budgets, schedules</td></tr>
+          <tr><th>Performance metrics</th><td>spend, impressions, clicks, conversions as returned by Insights/Reporting APIs</td></tr>
+          <tr><th>Creative references</th><td>video/image asset IDs tied to our ads (not public user profiles)</td></tr>
+        </table>
+        <p style="margin-top:1rem;"><a href="privacy.html">Privacy Policy</a></p>
+      </section>
+      <section class="card">
+        <h2>6. Security measures</h2>
+        <ul>
+          <li>HTTPS for all public pages and OAuth redirects</li>
+          <li>API secrets and tokens stored only on private servers / secure environment variables</li>
+          <li>Role-based access for internal staff; no public API key exposure</li>
+          <li>Logging limited to operations and error diagnosis; logs not sold or published</li>
+          <li>Compliance with TikTok developer terms and Marketing API policies</li>
+        </ul>
+      </section>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>5. Data collected via API</h2>
-      <table class="data">
-        <tr><th>OAuth tokens</th><td>access_token, refresh_token</td></tr>
-        <tr><th>Account IDs</th><td>advertiser_id, business center identifiers</td></tr>
-        <tr><th>Advertising structure</th><td>campaign / ad group / ad names, IDs, statuses, budgets, schedules</td></tr>
-        <tr><th>Performance metrics</th><td>spend, impressions, clicks, conversions as returned by Insights/Reporting APIs</td></tr>
-        <tr><th>Creative references</th><td>video/image asset IDs tied to our ads (not public user profiles)</td></tr>
-      </table>
-      <p>Full policy: <a href="privacy.html">Privacy Policy</a></p>
-    </section>
+  <section class="section section-alt">
+    <div class="wrap">
+      <section class="card">
+        <h2>7. English summary for application form</h2>
+        <p>Copy-paste for Business API developer profile:</p>
+        <blockquote class="callout callout-quote">
+          Internal tool to manage our own TikTok ad accounts: read reports, create and update campaigns in bulk. OAuth for authorized advertisers only. Company website: https://www.bayme.store/ — Developer disclosure: https://app.bayme.store/developer.html — Contact: dev@bayme.store
+        </blockquote>
+      </section>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>6. Security measures</h2>
-      <ul>
-        <li>HTTPS for all public pages and OAuth redirects</li>
-        <li>API secrets and tokens stored only on private servers / secure environment variables</li>
-        <li>Role-based access for internal staff; no public API key exposure</li>
-        <li>Logging limited to operations and error diagnosis; logs not sold or published</li>
-        <li>Compliance with TikTok developer terms and Marketing API policies</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>7. English summary for application form</h2>
-      <p>Copy-paste for Business API developer profile:</p>
-      <blockquote class="callout" style="margin:0.5rem 0;">
-        Internal tool to manage our own TikTok ad accounts: read reports, create and update campaigns in bulk. OAuth for authorized advertisers only. Company website: https://app.bayme.store/ — Contact: dev@bayme.store
-      </blockquote>
-    </section>
-
-    <section class="card">
-      <h2>8. Review contact</h2>
-      <p>If TikTok review needs clarification or a test authorization:</p>
-      <p><strong>Email:</strong> <a href="mailto:dev@bayme.store">dev@bayme.store</a></p>
-      <p>Please include your case ID, app ID, or advertiser ID in the subject line.</p>
-      <p><a class="btn" href="index.html">← Company home</a></p>
-    </section>
-  </main>
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Review contact</h2>
+      <p>If TikTok review needs clarification or a test authorization, email us with your case ID, app ID, or advertiser ID.</p>
+      <a class="btn-primary" href="mailto:dev@bayme.store">dev@bayme.store</a>
+      <a class="btn-ghost btn-ghost-on-dark" href="index.html" style="margin-left:0.75rem;">← Company home</a>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>&copy; Bayme · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></p>
+      <p>&copy; Bayme · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="index.html">Home</a></p>
+      <p class="updated">Last updated: May 2026 · Design inspired by Stripe design system (ColorSpace skill)</p>
     </div>
   </footer>
 </body>

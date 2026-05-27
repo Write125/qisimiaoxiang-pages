@@ -1,8 +1,22 @@
 # TikTok / Business API 合规站（GitHub Pages）
 
-托管：**`app.bayme.store`** → CNAME `write125.github.io` · 仓库 [Write125/qisimiaoxiang-pages](https://github.com/Write125/qisimiaoxiang-pages)
+托管：**`app.bayme.store`** + **`www.bayme.store`** → CNAME `write125.github.io` · 仓库 [Write125/qisimiaoxiang-pages](https://github.com/Write125/qisimiaoxiang-pages)
 
-## 页面
+## 双域名说明
+
+| 子域 | 用途 | GitHub Pages |
+|------|------|--------------|
+| **app** | OAuth 回调、Terms/Privacy、developer 披露 | `CNAME` 文件主域（必开 HTTPS） |
+| **www** | Business 表单「公司官网」 | Settings → Pages → **Add domain** 加第二域名 |
+
+DNS 两条 CNAME 均已指向 `write125.github.io`。若 `app` 404 而 `www` 正常，说明 `CNAME` 文件与 Pages 设置不一致——以 **`app.bayme.store`** 为主（TikTok OAuth 依赖）。
+
+**一次性配置（GitHub 网页）：**
+
+1. 打开 [qisimiaoxiang-pages → Settings → Pages](https://github.com/Write125/qisimiaoxiang-pages/settings/pages)
+2. Custom domain 应显示 `app.bayme.store`（来自仓库 `CNAME` 文件）
+3. 点 **Add domain**，再填 `www.bayme.store` → 等两个域名的 HTTPS 证书生效（约 5～15 分钟）
+4. 自检：`curl -I https://app.bayme.store/` 与 `https://www.bayme.store/` 均 **200**
 
 | 页面 | URL | 用途 |
 |------|-----|------|
