@@ -1,0 +1,170 @@
+/* Bayme — app.bayme.store compliance site */
+:root {
+  --bg: #f4f6f9;
+  --card: #fff;
+  --text: #1a1d21;
+  --muted: #5c6370;
+  --accent: #0a66c2;
+  --accent-dark: #084a8f;
+  --border: #e4e7ec;
+  --callout: #f0f7ff;
+  --max: 920px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+}
+a { color: var(--accent); }
+a:hover { color: var(--accent-dark); }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+.site-header {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 0.85rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.site-header .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.logo { font-weight: 700; font-size: 1.15rem; color: var(--text); text-decoration: none; }
+.logo span { color: var(--muted); font-weight: 400; font-size: 0.85rem; margin-left: 0.35rem; }
+nav a {
+  margin-left: 0.9rem;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+nav a:hover { color: var(--accent); }
+main { padding: 2rem 0 3rem; }
+.hero {
+  background: linear-gradient(135deg, #fff 0%, #f8fbff 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem 1.75rem;
+  margin-bottom: 1.5rem;
+}
+.hero h1 { margin: 0 0 0.5rem; font-size: 1.85rem; }
+.hero .lead { font-size: 1.05rem; color: var(--muted); margin: 0 0 1rem; max-width: 42em; }
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #e8f4fc;
+  color: #0a5a8a;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  margin-right: 0.35rem;
+}
+.badge.green { background: #e6f4ea; color: #137333; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.35rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 0.65rem; font-size: 1.2rem; }
+.card h3 { margin: 1rem 0 0.4rem; font-size: 1.02rem; }
+.card ul, .card ol { margin: 0.35rem 0 0; padding-left: 1.25rem; }
+.card li { margin-bottom: 0.4rem; }
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 720px) { .grid-2 { grid-template-columns: 1fr; } nav a { margin-left: 0.55rem; font-size: 0.85rem; } }
+.callout {
+  background: var(--callout);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.15rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.95rem;
+}
+.steps { counter-reset: step; list-style: none; padding: 0; margin: 0; }
+.steps li {
+  counter-increment: step;
+  position: relative;
+  padding: 0.65rem 0 0.65rem 2.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.steps li:last-child { border-bottom: none; }
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.75rem;
+}
+table.info, table.data {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+}
+table.info th, table.info td,
+table.data th, table.data td {
+  text-align: left;
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+table.info th, table.data th { width: 32%; color: var(--muted); font-weight: 500; background: #fafbfc; }
+table.data code { font-size: 0.88em; word-break: break-all; }
+.faq dt { font-weight: 600; margin-top: 1rem; }
+.faq dd { margin: 0.35rem 0 0; color: #333; }
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  background: var(--card);
+}
+.site-footer a { color: var(--muted); }
+.legal-page h1 { font-size: 1.55rem; margin-top: 0; }
+.legal-page h2 { font-size: 1.12rem; margin-top: 1.85rem; }
+.legal-page p, .legal-page li { color: #333; }
+.updated { font-size: 0.9rem; color: var(--muted); }
+.oauth-box pre {
+  background: #f0f2f5;
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+  word-break: break-all;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+}
+.oauth-box .ok { color: #0a7a2f; font-weight: 600; }
+.oauth-box .err { color: #b00020; font-weight: 600; }
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff !important;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+.btn:hover { background: var(--accent-dark); text-decoration: none; }
