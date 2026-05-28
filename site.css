@@ -686,3 +686,87 @@ table.data code {
   align-items: flex-end;
 }
 .footer-brand { margin: 0 0 0.35rem; color: var(--stripe-navy); }
+.footer-tagline { margin: 0; font-size: 0.875rem; color: var(--stripe-body); }
+.footer-legal-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 2rem;
+  padding-bottom: 1.5rem;
+}
+@media (max-width: 720px) { .footer-legal-grid { grid-template-columns: 1fr; gap: 1.25rem; } }
+.footer-col-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--stripe-label);
+}
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-links li { margin-bottom: 0.35rem; }
+.footer-links a { color: var(--stripe-body); font-size: 0.9rem; }
+.footer-bottom {
+  border-top: 1px solid var(--stripe-border);
+  padding-top: 1rem;
+  font-size: 0.85rem;
+}
+.footer-bottom p { margin: 0.25rem 0; }
+
+.hero-studio { padding: 4rem 0 3rem; }
+.hero-studio-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+@media (max-width: 900px) { .hero-studio-grid { grid-template-columns: 1fr; } }
+.hero-visual-studio {
+  display: grid;
+  gap: 0.75rem;
+  min-height: 220px;
+}
+.studio-card {
+  background: linear-gradient(135deg, rgba(83, 58, 253, 0.08), rgba(6, 27, 49, 0.04));
+  border: 1px solid var(--stripe-border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  font-weight: 500;
+  color: var(--stripe-label);
+  box-shadow: var(--shadow-soft);
+}
+.studio-card:nth-child(2) { margin-left: 1.5rem; }
+.studio-card:nth-child(3) { margin-left: 0.75rem; }
+@media (max-width: 900px) {
+  .studio-card, .studio-card:nth-child(2), .studio-card:nth-child(3) { margin-left: 0; }
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+@media (max-width: 900px) { .portfolio-grid { grid-template-columns: 1fr; } }
+.portfolio-card {
+  background: var(--stripe-bg);
+  border: 1px solid var(--stripe-border);
+  border-radius: var(--radius);
+  padding: 1.35rem;
+  box-shadow: var(--shadow-soft);
+}
+.portfolio-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--stripe-navy);
+}
+.portfolio-card p { margin: 0 0 0.75rem; font-size: 0.9rem; color: var(--stripe-body); }
+.portfolio-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+  color: var(--stripe-label);
+}
