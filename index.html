@@ -3,145 +3,210 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Bayme — Direct e-commerce advertiser. Company website and TikTok Marketing API developer disclosure." />
-  <title>Bayme — E-commerce &amp; TikTok Advertising</title>
+  <meta name="description" content="ShiDeHua — Contemporary apparel for everyday wear. Shop tees and essentials. Official site on bayme.store." />
+  <title>ShiDeHua — Contemporary Apparel</title>
   <link rel="stylesheet" href="site.css" />
 </head>
-<body class="page-home">
+<body class="page-home page-store">
+  <div class="announce-bar">
+    <div class="wrap">Free standard shipping on orders over <strong>$79</strong> · 7-day hassle-free returns</div>
+  </div>
+
   <header class="site-header">
     <div class="wrap">
-      <a class="logo" href="index.html">Bayme<span>bayme.store</span></a>
+      <a class="logo" href="index.html">ShiDeHua<span>Apparel</span></a>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="developer.html">API</a>
-        <a href="terms.html">Terms</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="mailto:dev@bayme.store">Contact</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#shipping">Shipping</a>
+        <a href="#tiktok-api">TikTok API</a>
+        <a href="developer.html">Developers</a>
+        <a href="mailto:orders@bayme.store">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero-stripe">
-    <div class="wrap">
-      <p class="eyebrow"><span class="dot"></span> Direct advertiser · E-commerce</p>
-      <h1>Advertising operations, built for our team.</h1>
-      <p class="lead">Bayme is an online retail company. We use TikTok paid advertising to grow our own brands. This official website provides company information, legal policies, and secure OAuth endpoints for our <strong>internal</strong> Marketing API tools.</p>
-      <p class="lead" style="font-size:1rem;margin-bottom:0;">Not a public SaaS — access is limited to authorized staff with TikTok for Business permissions.</p>
-      <div class="hero-actions">
-        <a class="btn-primary" href="developer.html">API disclosure for reviewers</a>
-        <a class="btn-ghost" href="mailto:dev@bayme.store">dev@bayme.store</a>
+  <section class="hero-stripe hero-store">
+    <div class="wrap hero-store-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> New season · Essentials</p>
+        <h1>Wear it simple.<br />Wear it well.</h1>
+        <p class="lead">ShiDeHua designs easy-fit tees and daily staples for a clean, modern wardrobe. Quality fabrics, honest pricing, shipped worldwide.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#shop">Shop collection</a>
+          <a class="btn-ghost" href="#about">Our story</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>4.8</strong><span>avg. rating</span></li>
+          <li><strong>12k+</strong><span>pieces shipped</span></li>
+          <li><strong>7-day</strong><span>returns</span></li>
+        </ul>
+      </div>
+      <div class="hero-visual">
+        <img src="https://d3m2834ve5l2nq.cloudfront.net/5246c0463aa64143bea65f7de69b0cf4.jpg?x-oss-process=style/webp" alt="ShiDeHua premium cotton crew tee" width="560" height="700" loading="eager" />
       </div>
     </div>
   </section>
 
-  <section class="section section-alt">
-    <div class="wrap">
-      <h2 class="section-title">What we do</h2>
-      <p class="section-sub">We sell through online channels and manage performance marketing in-house, including TikTok Ads Manager and planned Marketing API automation.</p>
-      <div class="feature-grid">
-        <article class="feature-card">
-          <div class="icon" aria-hidden="true">📊</div>
-          <h3>Reporting</h3>
-          <p>Read campaign, ad group, and ad metrics for daily analysis and exports — the same data our buyers use in Ads Manager today.</p>
-        </article>
-        <article class="feature-card">
-          <div class="icon" aria-hidden="true">⚡</div>
-          <h3>Campaign management</h3>
-          <p>Create and update campaigns, ad groups, and ads in bulk to replace repetitive manual work across our authorized accounts.</p>
-        </article>
-        <article class="feature-card">
-          <div class="icon" aria-hidden="true">🔐</div>
-          <h3>Secure OAuth</h3>
-          <p>Staff authorize via TikTok for Business. Tokens are exchanged on private servers — never stored in this public website.</p>
-        </article>
-      </div>
+  <section class="trust-strip">
+    <div class="wrap trust-grid">
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">🚚</span><div><strong>Fast logistics</strong><p>Standard 7–12 days · Express 3–5 days</p></div></div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">↩</span><div><strong>7-day returns</strong><p>Unworn items with tags attached</p></div></div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">🔒</span><div><strong>Secure checkout</strong><p>Encrypted payment · Order tracking</p></div></div>
+      <div class="trust-item"><span class="trust-icon" aria-hidden="true">✓</span><div><strong>Quality check</strong><p>Inspected before dispatch</p></div></div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="shop">
+    <div class="wrap">
+      <h2 class="section-title">Best sellers</h2>
+      <p class="section-sub">Curated from our current drop — unisex fits, soft cotton blends, easy care.</p>
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="product-media" href="mailto:orders@bayme.store?subject=Order%20SDH-CREW-01">
+            <img src="https://d3m2834ve5l2nq.cloudfront.net/5246c0463aa64143bea65f7de69b0cf4.jpg?x-oss-process=style/webp" alt="Premium Cotton Crew Tee" loading="lazy" />
+            <span class="product-badge">Bestseller</span>
+          </a>
+          <div class="product-body">
+            <h3><a href="mailto:orders@bayme.store?subject=Order%20SDH-CREW-01">Premium Cotton Crew Tee</a></h3>
+            <p class="product-desc">220gsm combed cotton · Relaxed fit · 6 colors</p>
+            <p class="product-price"><span class="price">$42.00</span></p>
+            <a class="btn-primary btn-sm" href="mailto:orders@bayme.store?subject=Order%20SDH-CREW-01">Order inquiry</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-media" href="mailto:orders@bayme.store?subject=Order%20SDH-LOGO-02">
+            <img src="https://d3m2834ve5l2nq.cloudfront.net/686441891c4c42f090f86c014032d3b7.jpg?x-oss-process=style/webp" alt="Number Logo Graphic Tee" loading="lazy" />
+          </a>
+          <div class="product-body">
+            <h3><a href="mailto:orders@bayme.store?subject=Order%20SDH-LOGO-02">Number Logo Graphic Tee</a></h3>
+            <p class="product-desc">Minimal front print · XS–L · Unisex</p>
+            <p class="product-price"><span class="price">$48.00</span></p>
+            <a class="btn-primary btn-sm" href="mailto:orders@bayme.store?subject=Order%20SDH-LOGO-02">Order inquiry</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-media" href="mailto:orders@bayme.store?subject=Order%20SDH-EDIT-03">
+            <img src="https://d3m2834ve5l2nq.cloudfront.net/d940be53979a48e6959f6b37678ae275.jpg?x-oss-process=style/webp" alt="Editorial Graphic Tee" loading="lazy" />
+            <span class="product-badge new">New</span>
+          </a>
+          <div class="product-body">
+            <h3><a href="mailto:orders@bayme.store?subject=Order%20SDH-EDIT-03">Editorial Graphic Tee</a></h3>
+            <p class="product-desc">Limited print · Soft-touch fabric</p>
+            <p class="product-price"><span class="price">$55.00</span></p>
+            <a class="btn-primary btn-sm" href="mailto:orders@bayme.store?subject=Order%20SDH-EDIT-03">Order inquiry</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <a class="product-media" href="mailto:orders@bayme.store?subject=Order%20SDH-ESS-04">
+            <img src="https://d3m2834ve5l2nq.cloudfront.net/b527814499b34484b6381d4f3d7459c2.jpg?x-oss-process=style/webp" alt="Essential Everyday Tee" loading="lazy" />
+          </a>
+          <div class="product-body">
+            <h3><a href="mailto:orders@bayme.store?subject=Order%20SDH-ESS-04">Essential Everyday Tee</a></h3>
+            <p class="product-desc">Everyday staple · Machine washable</p>
+            <p class="product-price"><span class="price">$38.00</span> <span class="compare">$52.00</span></p>
+            <a class="btn-primary btn-sm" href="mailto:orders@bayme.store?subject=Order%20SDH-ESS-04">Order inquiry</a>
+          </div>
+        </article>
+      </div>
+      <p class="shop-note">Catalog preview — email <a href="mailto:orders@bayme.store">orders@bayme.store</a> with SKU for size &amp; color. Full checkout launching soon.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="about">
     <div class="wrap info-panel">
       <section class="card">
-        <h2>About Bayme</h2>
-        <p>Bayme operates e-commerce and performance marketing for our own product lines. We are applying for TikTok Marketing API access to support internal tooling only.</p>
+        <h2>About ShiDeHua</h2>
+        <p>ShiDeHua is a direct-to-consumer apparel brand focused on clean silhouettes and wearable quality. We design for daily rotation — not runway noise.</p>
         <ul>
-          <li><strong>Business type:</strong> Direct advertiser / e-commerce</li>
-          <li><strong>API use:</strong> Our own ad accounts only</li>
-          <li><strong>Public product:</strong> No consumer sign-up on this site</li>
+          <li><strong>Category:</strong> Apparel · Tees &amp; essentials</li>
+          <li><strong>Model:</strong> Direct brand · In-house marketing</li>
+          <li><strong>Channels:</strong> Online catalog · Social &amp; paid media</li>
         </ul>
       </section>
       <section class="card">
         <h2>Company information</h2>
         <table class="info">
-          <tr><th>Trade name</th><td>Bayme</td></tr>
-          <tr><th>Primary domain</th><td>bayme.store</td></tr>
-          <tr><th>Website</th><td>https://www.bayme.store/</td></tr>
-          <tr><th>Compliance pages</th><td>https://www.bayme.store/</td></tr>
-          <tr><th>Contact</th><td><a href="mailto:dev@bayme.store">dev@bayme.store</a></td></tr>
+          <tr><th>Trade name</th><td>ShiDeHua</td></tr>
+          <tr><th>Website domain</th><td>bayme.store (www)</td></tr>
+          <tr><th>Legal entity</th><td>Matches TikTok for Business advertiser account — available to reviewers on request</td></tr>
+          <tr><th>Business region</th><td>Ships internationally · Fulfillment from Asia hubs</td></tr>
+          <tr><th>Orders</th><td><a href="mailto:orders@bayme.store">orders@bayme.store</a></td></tr>
+          <tr><th>Developer / API</th><td><a href="mailto:dev@bayme.store">dev@bayme.store</a></td></tr>
         </table>
       </section>
     </div>
   </section>
 
-  <section class="section section-alt">
+  <section class="section" id="shipping">
     <div class="wrap">
-      <section class="card">
-        <h2>TikTok Marketing API — scope</h2>
-        <p>We request API access aligned with workflows our team already performs manually:</p>
-        <ul>
-          <li><strong>Reporting</strong> — performance insights for authorized advertisers</li>
-          <li><strong>Management</strong> — create/update/pause campaigns, ad groups, and ads</li>
-          <li><strong>OAuth</strong> — redirect URI: <a href="oauth.html">https://www.bayme.store/oauth.html</a></li>
-        </ul>
-        <h3>We do not</h3>
-        <ul>
-          <li>Resell API access or operate a multi-tenant SaaS</li>
-          <li>Collect unrelated TikTok consumer profile data</li>
-          <li>Publish tokens or advertiser data on this site</li>
-        </ul>
-        <p><a class="btn-primary" href="developer.html" style="margin-top:1rem;">Full developer disclosure →</a></p>
-      </section>
+      <h2 class="section-title">Shipping &amp; returns</h2>
+      <div class="shipping-grid">
+        <article class="card">
+          <h3>Shipping options</h3>
+          <table class="info">
+            <tr><th>Standard</th><td>7–12 business days · <strong>$6.90</strong> (free over $79)</td></tr>
+            <tr><th>Express</th><td>3–5 business days · <strong>$14.90</strong></td></tr>
+            <tr><th>Tracking</th><td>Provided by email after dispatch</td></tr>
+            <tr><th>Carriers</th><td>YunExpress · 4PX · local last-mile partners</td></tr>
+          </table>
+        </article>
+        <article class="card">
+          <h3>Returns</h3>
+          <p><strong>7-day hassle-free returns</strong> on unworn items with original tags. Contact <a href="mailto:orders@bayme.store">orders@bayme.store</a> within 7 days of delivery to start a return. Refunds processed within 5–10 business days after inspection.</p>
+          <p>See <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy</a> for details.</p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section section-alt reviews-section">
     <div class="wrap">
-      <section class="card">
-        <h2>Security &amp; compliance</h2>
-        <ul>
-          <li>HTTPS for all pages and OAuth callbacks</li>
-          <li>Credentials stored only on private infrastructure</li>
-          <li>Role-based access for internal staff</li>
-          <li>Compliance with TikTok developer and Marketing API policies</li>
-        </ul>
-        <p style="margin-top:1rem;"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
-      </section>
+      <h2 class="section-title">What customers say</h2>
+      <div class="review-grid">
+        <blockquote class="review-card"><p>「Fabric feels thicker than fast fashion — true to photos.」</p><cite>— M.K., repeat buyer</cite></blockquote>
+        <blockquote class="review-card"><p>「Shipping to EU took 9 days, tracked the whole way.」</p><cite>— L.R., first order</cite></blockquote>
+        <blockquote class="review-card"><p>「Returned one size — refund in a week, no drama.」</p><cite>— A.T., exchange customer</cite></blockquote>
+      </div>
+    </div>
+  </section>
 
-      <section class="card" style="margin-top:1.25rem;">
-        <h2>FAQ for platform reviewers</h2>
-        <dl class="faq">
-          <dt>Is this a consumer app?</dt>
-          <dd>No. Internal advertising operations for Bayme staff only.</dd>
-          <dt>Why www.bayme.store?</dt>
-          <dd>Our registered domain is <strong>bayme.store</strong>. We serve company information, legal policies, and OAuth callbacks on <strong>www.bayme.store</strong> (primary company URL).</dd>
-          <dt>Where is the API documentation?</dt>
-          <dd>See our <a href="developer.html">developer disclosure page</a> with URLs, data handling, and integration workflow.</dd>
-        </dl>
-      </section>
+  <section class="section" id="tiktok-api">
+    <div class="wrap">
+      <div class="api-panel card">
+        <p class="eyebrow" style="margin-bottom:0.75rem;"><span class="dot"></span> For platform reviewers</p>
+        <h2>TikTok Marketing API — internal use only</h2>
+        <p>ShiDeHua operates our own TikTok ad accounts for e-commerce growth. We apply for <strong>TikTok Marketing API</strong> access to automate reporting and campaign management our media team already performs manually — not a public SaaS.</p>
+        <ul>
+          <li><strong>Scopes:</strong> Reporting · Campaign / ad group / ad management · OAuth</li>
+          <li><strong>OAuth redirect:</strong> <a href="oauth.html">https://www.bayme.store/oauth.html</a></li>
+          <li><strong>Full disclosure:</strong> <a href="developer.html">Developer &amp; API documentation</a></li>
+        </ul>
+        <div class="hero-actions" style="margin-top:1.25rem;">
+          <a class="btn-primary" href="developer.html">API disclosure for reviewers</a>
+          <a class="btn-ghost" href="mailto:dev@bayme.store">dev@bayme.store</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="cta-band">
     <div class="wrap">
-      <h2>Questions about our API application?</h2>
-      <p>Contact our developer team. Please include your TikTok case ID, app ID, or advertiser ID.</p>
-      <a class="btn-primary" href="mailto:dev@bayme.store">Email dev@bayme.store</a>
+      <h2>Questions about your order or our API application?</h2>
+      <p>Orders: <a href="mailto:orders@bayme.store">orders@bayme.store</a> · Developers: <a href="mailto:dev@bayme.store">dev@bayme.store</a></p>
+      <a class="btn-primary" href="mailto:orders@bayme.store">Email us</a>
     </div>
   </section>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>&copy; Bayme · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="developer.html">API</a></p>
-      <p class="updated">Last updated: May 2026 · Design inspired by Stripe design system (ColorSpace skill)</p>
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand"><strong>ShiDeHua</strong> · Contemporary apparel</p>
+        <p>© ShiDeHua · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="developer.html">API</a></p>
+      </div>
+      <div>
+        <p class="updated">www.bayme.store · Last updated: May 2026</p>
+      </div>
     </div>
   </footer>
 </body>
