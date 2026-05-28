@@ -629,6 +629,54 @@ table.data code {
 
 .api-panel h2 { margin-top: 0; }
 .api-panel ul { color: var(--stripe-label); }
+.api-section-compact { padding-top: 2rem; padding-bottom: 2rem; }
+
+.company-facts .facts-note {
+  margin: 0 0 1rem;
+  font-size: 0.875rem;
+  color: var(--stripe-body);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 900px) { .process-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .process-grid { grid-template-columns: 1fr; } }
+
+.process-step {
+  background: var(--stripe-bg);
+  border: 1px solid var(--stripe-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-soft);
+}
+.process-step h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--stripe-navy);
+}
+.process-step p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--stripe-body);
+  line-height: 1.5;
+}
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: rgba(83, 58, 253, 0.12);
+  color: var(--stripe-purple);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.65rem;
+}
 
 .footer-grid {
   display: flex;
