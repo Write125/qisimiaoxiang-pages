@@ -13,6 +13,7 @@
 | Contact | https://www.bayme.store/contact-us.html |
 | Privacy | https://www.bayme.store/privacy-policy.html |
 | Terms | https://www.bayme.store/terms-of-service.html |
+| Data deletion | https://www.bayme.store/data-deletion.html |
 | Developer | https://www.bayme.store/developer.html |
 | OAuth | https://www.bayme.store/oauth.html |
 | Catalog | https://www.bayme.store/catalog.html |
